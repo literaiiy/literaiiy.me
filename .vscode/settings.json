@@ -1,5 +1,12 @@
 {
     "editor.tabSize": 2,
     "workbench.colorTheme": "Snowflake Darker Theme",
-    "terminal.integrated.fontFamily": "\"Space Mono\""
+    "terminal.integrated.fontFamily": "\"Space Mono\"",
+    "emmet.excludeLanguages": [
+
+        "markdown"
+    ],
+    "emmet.includeLanguages": {
+        "javascript":"javascriptreact"
+    },
 }
