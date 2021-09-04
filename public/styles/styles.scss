@@ -14,19 +14,20 @@ body {
     margin:0;
 }
 
-h1 {
-    font-family: "Yeseva One";
+h1.fpLogo {
     font-size: 10vw;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "Yeseva One";
     margin: 0;
+
 }
 
 nav {
     display: flex;
-    height: 2rem;
+    justify-content: space-between;
     padding: 0.75rem 0.75rem 0rem 0.75rem;
-    gap: 0.75rem;
-    flex-direction: row-reverse;
-    align-items: center;
 }
 
 a {
@@ -50,6 +51,29 @@ footer {
 }
 
 // Classes
+
+.rightSideNav {
+    display: flex;
+    height: 2rem;
+    gap: 0.75rem;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.svgLogo {
+    height: 5rem;
+    width: auto;
+}
+
+.creditsBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+        width: 16rem;
+        height: auto;
+    }
+}
 
 // Helpers
 

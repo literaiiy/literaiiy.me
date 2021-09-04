@@ -8,7 +8,7 @@ export default function Home() {
       {/* START */}
       <Navbar/>
       <main>
-        <h1>
+        <h1 class='fpLogo'>
           literaiiy.me
         </h1>
         <p>
