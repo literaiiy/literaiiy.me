@@ -5,8 +5,8 @@ import Navbar from '../components/nav.jsx'
 class Card extends React.Component {
   render() {
     return (
-      <div>
-        CARD TEST
+      <div class='card' style={{marginBottom: +this.props.yAdj +1 + 'rem'}}>
+        {this.props.n}
       </div>
     )
   }
