@@ -2,6 +2,10 @@ import React from "react";
 import { render } from "react-dom";
 
 class Navbar extends React.Component {
+  constructor(props) {
+    super(props)
+  }
+
   render() {
     return (
       <nav>

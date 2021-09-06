@@ -9,6 +9,10 @@ $lessBlack: #333;
 * {
     text-align: center;
     font-family: "Source Sans Pro";
+    &::selection {
+        color: white;
+        background-color: $lessBlack;
+    }
 }
 
 body {
@@ -50,7 +54,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: static;
     bottom: 0;
     width: 100%;
     height: 2.5rem;
@@ -87,7 +91,6 @@ p {
 }
 
 .card {
-    position: relative;
     border: 0.125rem solid black;
     background-color: white;
     font-family: 'DM Serif Display';
@@ -108,6 +111,18 @@ p {
         border-color: $lessBlack;
         color: $lessBlack;
     }
+    &.tbx {
+        background-image: url("https://gist.githubusercontent.com/literaiiy/b1d61f0d753288a2682dfc107291d744/raw/6e66013e48b8ab821de20decba151298cfe4e909/fuck%2520is%2520this.svg");
+        background-position: top;
+    }
+    &.dah {
+        background: rgb(253,226,86);
+background: linear-gradient(61deg, rgba(253,226,86,1) 30%, rgba(235,134,58,0.6138830532212884) 71%);
+    }
+    &.tir {
+        background-image: url("https://gist.githubusercontent.com/literaiiy/936c3fa85449cf5ee69684f94bb773fc/raw/6462d5dd6f6f5286863f577b1f426b0e0a8859c1/hollowed-boxes.svg");
+        background-size: cover;
+    }
 }
 
 .cardList {
@@ -118,6 +133,12 @@ p {
     overflow-x: scroll;
     scrollbar-width: none;
 }
+
+.empty {
+    height: 75rem;
+}
+
+// Pseudo
 
 ::-webkit-scrollbar {
     display: none;
