@@ -6,6 +6,10 @@ export default function Home() {
   return (
     <div> 
       {/* START */}
+      <div id='modal'>
+        <h2 id="modalH2">bruh</h2>
+        <p id="modalP">Bruh</p>
+      </div>
       <Navbar/>
       <main>
         <h1 class='fpLogo'>
@@ -16,7 +20,7 @@ export default function Home() {
           with the help of libraries React.js and Next.js. Stay tuned for more.
         </p> */}
         <div className="cardList">
-          <Card i='tbx'n='literaiiy Toolbox' yAdj='2' href='https://toolbox.literaiiy.me'/>
+          <Card onMouseEnter={() => this.handleMouseEnter} i='tbx' n='literaiiy Toolbox' yAdj='2' href='https://toolbox.literaiiy.me'/>
           <Card i='dah' n='dah.li/a' yAdj='0' href="https://dah.li/a"/>
           <Card i='tir' n='tiramisu' yAdj='1' href="https://tiramisu.vip"/>
           <Card n='' yAdj='2'/>
