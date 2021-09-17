@@ -6,14 +6,11 @@ export default function Home() {
   return (
     <div> 
       {/* START */}
-      <div id='modal'>
-        <h2 id="modalH2">bruh</h2>
-        <p id="modalP">Bruh</p>
-      </div>
       <Navbar/>
       <main>
         <h1 class='fpLogo'>
-          literaiiy.me
+          literaiiy
+          <span id='dotMe'>.me</span>
         </h1>
         {/* <p>
           literaiiy.me is currently being rewritten in JavaScript,
@@ -28,7 +25,7 @@ export default function Home() {
           <Card n='' yAdj='2'/>
           <Card n='' yAdj='3'/>
         </div>
-        <div className="empty"></div>
+        <div className="empty">cool swooping in CSS animation here of my sexy logo<br /> and then my ahbout thing fading in</div>
         <div>
           <h2>About</h2>
           <p>
@@ -66,6 +63,10 @@ export default function Home() {
           <a href='https://nextjs.org' className="semisemibold"> Next.js</a>.
         </div>
       </footer>
+      <script>
+        console.log("hi")
+
+      </script>
       {/* END */}
     </div>
   )
