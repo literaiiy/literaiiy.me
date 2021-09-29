@@ -1,4 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&family=Yeseva+One&family=Devonshire&family=Yesteryear&family=Nanum+Brush+Script&family=Dancing+Script&family=Alex+Brush&family=Arizonia&family=Kristi&family=WindSong&family=DM+Serif+Display:ital@0;1&display=swap");
+@font-face {
+    font-family: "Doppelganger";
+    src: url("../fonts/Doppelganger.otf");
+}
+
+@font-face {
+    font-family: "Baron";
+    src: url("../fonts/Baron.otf");
+}
 
 // Variables
 
@@ -11,12 +19,15 @@ $dahliaYellow: #FDE256;
 $dahliaOrange: #EB863A;
 $tiramisuLBrown: #CC5100;
 $tiramisuBrown: #7B3100;
+$logoFont: "Beattingvile";
+$headingFont: "Source Sans Pro";
+$bodyFont: "Source Sans Pro";
 
 // Elements
 
 * {
     text-align: center;
-    font-family: "Source Sans Pro";
+    font-family: $bodyFont;
     &::selection {
         color: white;
         background-color: $lessBlack;
@@ -28,15 +39,17 @@ body {
 }
 
 h1.fpLogo {
-    font-size: 10vw;
+    font-size: 10rem;
     z-index: 0;
     margin-bottom: -6rem;
     user-select: none;
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: "Yeseva One";
+    font-family: $headingFont;
+    font-weight: 900;
     margin: 0;
+    padding: 2rem;
 
 }
 
@@ -47,6 +60,12 @@ nav {
     padding: 1rem 1rem 0 1rem;
     top: 0;
     z-index: 13;
+}
+
+p {
+    color:inherit;
+    margin: 0;
+    padding: 0.5rem;
 }
 
 a {
@@ -67,7 +86,10 @@ footer {
     bottom: 0;
     width: 100%;
     height: 2.5rem;
+    background-color: black;
+    color: white;
 }
+
 
 // Classes
 
@@ -80,7 +102,7 @@ footer {
 }
 
 .svgLogo {
-    height: 5rem;
+    height: 4rem;
     width: auto;
 }
 
@@ -98,7 +120,6 @@ footer {
     border: 0.125rem solid black;
     background-color: white;
     font-family: 'DM Serif Display';
-    font-size: 2rem;
     writing-mode: vertical-rl;
     padding: 1rem;
     height: 60vh;
@@ -114,28 +135,31 @@ footer {
     background-size: cover;
     background-position: center;
     &:hover {
-        box-shadow: 0.5rem 0.5rem $lessBlack;
+        box-shadow: 0.25rem 0.25rem $lessBlack;
         border-color: $lessBlack;
         color: $lessBlack;
+    }
+    &:hover > .cardOverlay {
+        opacity: 1;
     }
     &.tbx {
         background-image: url("https://user-images.githubusercontent.com/64048778/132974059-3c24230b-863e-43d0-a8ab-048da7d45300.png");
         &:hover {
-            box-shadow: 0.5rem 0.5rem $toolboxCream;
+            box-shadow: 0.25rem 0.25rem $toolboxCream;
             border-color: $toolboxCream;
         }
     }
     &.dah {
         background-image: url("https://user-images.githubusercontent.com/64048778/132967468-99a8e7c0-43a0-4579-94b2-09b770595a76.png");
         &:hover {
-            box-shadow: 0.5rem 0.5rem $dahliaYellow;
-            border-color: $dahliaYellow;
+            box-shadow: 0.25rem 0.25rem $dahliaOrange;
+            border-color: $dahliaOrange;
         }
     }
     &.tir {
         background-image: url("https://user-images.githubusercontent.com/64048778/132967474-563cab06-8dc1-4d5a-accf-caccadfd468a.png");
         &:hover {
-            box-shadow: 0.5rem 0.5rem $tiramisuBrown;
+            box-shadow: 0.25rem 0.25rem $tiramisuBrown;
             border-color: $tiramisuBrown;
             background-color: $tiramisuLBrown;
             color: white;
@@ -143,44 +167,79 @@ footer {
     }
 }
 
-.cardList {
+#cardList {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: end;
-    overflow-x: scroll;
+    overflow-x: none;
     scrollbar-width: none;
+}
+
+.cardOverlay {
+    position: relative;
+    background-color: rgb(0,0,0,0.5);
+    writing-mode: horizontal-tb;
+    text-align: left;
+    opacity: 0;
+    color: white;
+    transition: inherit;
+    height: calc(100% + 2rem);
+    width: 9.5rem;
+    margin: -1rem;
+}
+
+.cardInside {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.cardHeading {
+    font-family: $headingFont;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.cardTagList {
+    display: flex;
+    flex-wrap: wrap;
+    filter: invert(1);
+    gap: 1rem;
+    justify-content: space-evenly;
+    padding-bottom: 1.5rem;
+}
+
+.cardTagIcon {
+    width: 2.5rem;
 }
 
 .empty {
     height: 75rem;
 }
 
-#dotMe {
-    font-family: 'Alex Brush';
+#litLogo {
+    font-family: inherit;
 }
-// #modal {
-//     opacity: 0;
-//     background-color: white;
-//     position:fixed;
-//     width:30%;
-//     height:20%;
-//     top:0;
-//     left:0;
-//     transition: 0.3s;
-//     pointer-events: none;
-//     justify-content: center;
-//     align-items: center;
-//     display: flex;
-//     flex-direction: column;
-//     padding: 1.5rem;
-//     border: 0.125rem solid black;
-//     box-shadow: 0.5rem 0.5rem;
-// }
 
-#modalImg {
-    width: auto;
-    max-height: 88px;
+#dotMe {
+    font-family: 'Arizonia';
+    height:1rem;
+}
+
+.titleFont {
+    font-family: $logoFont;
+    font-size: 5rem;
+    line-height: 3.8rem;
+    color: black;
+    transition: text-shadow 0.5s cubic-bezier(0,.97,.69,1);
+    text-shadow: 0px 0px transparent;
+    &:hover {
+        text-shadow: 2px 2px #ddd;
+
+    }
 }
 
 // Pseudo
@@ -189,24 +248,73 @@ footer {
     display: none;
 }
 
+// Magic Mouse
+
+body #magicMouseCursor {
+    position: fixed;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    z-index: 9999;
+    left: -100px;
+    top: 0;
+    transition: transform 0.07s, width 0.3s, height 0.3s;
+    pointer-events: none; 
+}
+
+.scrollContainer {
+    width: 100%;
+    height: 0.25rem;
+    background: #fff;
+    position: fixed;
+    z-index: 99;
+}
+  
+.scrollBar {
+    height: 0.25rem;
+    background: #000;
+    width: 0%;
+    transition: 1.5s;
+}
+
+.blackWave {
+    display: block;
+    width: 100vw;
+    height: auto;
+    padding: 2rem 0 0 0;
+    left: 0;
+    z-index: -1;
+    background-repeat: no-repeat;
+}
+
+.blackness {
+    background-color: black;
+    color: white;
+    p {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+
+.whiteP {
+    color:white;
+}
+
 // Helpers
 
-._100, .lightest { font-weight: 100 };
-
-._200, .lighter { font-weight: 200 };
-
-._300, .light { font-weight: 300 };
-
-._400, .regular { font-weight: 400 };
-
-._500, .semisemibold { font-weight: 500 };
-
-._600, .semibold { font-weight: 600 };
-
-._700, .bold { font-weight: 700 };
-
-._800, .bolder { font-weight: 800 };
-
-._900, .boldest { font-weight: 900 };
-
+._14px { font-size: 0.875rem }
+._100, .lightest { font-weight: 100 }
+._200, .lighter { font-weight: 200 }
+._300, .light { font-weight: 300 }
+._400, .regular { font-weight: 400 }
+._500, .semisemibold { font-weight: 500 }
+._600, .semibold { font-weight: 600 }
+._700, .bold { font-weight: 700 }
+._800, .bolder { font-weight: 800 }
+._900, .boldest { font-weight: 900 }
 ._noselect { user-select: none; }
+._salt1 { font-feature-settings: "salt"; font-family: inherit;}
+._salt2 { font-feature-settings: "salt" 2; font-family: inherit;}
+._salt3 { font-feature-settings: "salt" 3; font-family: inherit;}
+._salt4 { font-feature-settings: "salt" 4; font-family: inherit;}

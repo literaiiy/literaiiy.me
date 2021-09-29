@@ -7,7 +7,7 @@ function Credits() {
     <div>
       <Navbar />
       <h1>Credits</h1>
-      <div class='creditsBox'>
+      <div className='creditsBox'>
       <img src="https://gist.githubusercontent.com/literaiiy/0f8a22d56b24cb0357e22d15982bd446/raw/761120932e55b1ed957281361a4549f0808c9db2/nodejs-new-black.svg" alt="Node.js" />
       <img src="https://gist.githubusercontent.com/literaiiy/0f8a22d56b24cb0357e22d15982bd446/raw/761120932e55b1ed957281361a4549f0808c9db2/react-js-blog-header.svg" alt="React" />
       <img src="https://gist.githubusercontent.com/literaiiy/0f8a22d56b24cb0357e22d15982bd446/raw/761120932e55b1ed957281361a4549f0808c9db2/Nextjs-logo.svg" alt="Next.js" />
