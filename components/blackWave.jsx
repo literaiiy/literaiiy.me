@@ -7,6 +7,7 @@ class BlackWave extends React.Component {
   }   
 
   handleScroll() {
+    console.log('fuck')
     console.log(ref.current.getClientBoundingRect())
   }
 

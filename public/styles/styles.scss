@@ -90,7 +90,6 @@ footer {
     color: white;
 }
 
-
 // Classes
 
 .rightSideNav {
@@ -99,6 +98,7 @@ footer {
     gap: 0.75rem;
     flex-direction: row-reverse;
     align-items: center;
+    transition: 0.5s cubic-bezier(0,.97,.69,1);
 }
 
 .svgLogo {
@@ -234,11 +234,13 @@ footer {
     font-size: 5rem;
     line-height: 3.8rem;
     color: black;
-    transition: text-shadow 0.5s cubic-bezier(0,.97,.69,1);
+    transition: 0.5s cubic-bezier(0,.97,.69,1);
     text-shadow: 0px 0px transparent;
     &:hover {
         text-shadow: 2px 2px #ddd;
-
+    }
+    &.whiteP:hover {
+        text-shadow: 2px 2px #444;
     }
 }
 
@@ -299,6 +301,13 @@ body #magicMouseCursor {
 
 .whiteP {
     color:white;
+    & > a > img {
+        filter: invert(1);
+    }
+}
+
+.blackP {
+    color: black;
 }
 
 // Helpers
@@ -318,3 +327,4 @@ body #magicMouseCursor {
 ._salt2 { font-feature-settings: "salt" 2; font-family: inherit;}
 ._salt3 { font-feature-settings: "salt" 3; font-family: inherit;}
 ._salt4 { font-feature-settings: "salt" 4; font-family: inherit;}
+._invert { filter: invert(1) };
