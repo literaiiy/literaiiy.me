@@ -22,6 +22,7 @@ $tiramisuBrown: #7B3100;
 $logoFont: "Beattingvile";
 $headingFont: "Source Sans Pro";
 $bodyFont: "Source Sans Pro";
+$sexyTransition: 0.5s cubic-bezier(0,.97,.69,1);
 
 // Elements
 
@@ -86,8 +87,6 @@ footer {
     bottom: 0;
     width: 100%;
     height: 2.5rem;
-    background-color: black;
-    color: white;
 }
 
 // Classes
@@ -98,7 +97,10 @@ footer {
     gap: 0.75rem;
     flex-direction: row-reverse;
     align-items: center;
-    transition: 0.5s cubic-bezier(0,.97,.69,1);
+    transition: $sexyTransition; 
+    & > a {
+        transition: $sexyTransition;
+    }
 }
 
 .svgLogo {
@@ -122,7 +124,7 @@ footer {
     font-family: 'DM Serif Display';
     writing-mode: vertical-rl;
     padding: 1rem;
-    height: 60vh;
+    height: 36.25rem;
     min-width: 7.5rem;
     margin: 1rem 0.75rem;
     z-index: 2;
@@ -131,7 +133,6 @@ footer {
     box-shadow: 0.5rem 0.5rem black;
     user-select: none;
     transition: ease 0.6s;
-    perspective: 60rem;
     background-size: cover;
     background-position: center;
     &:hover {
@@ -171,7 +172,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: end;
+    align-items: flex-end;
     overflow-x: none;
     scrollbar-width: none;
 }
@@ -234,7 +235,7 @@ footer {
     font-size: 5rem;
     line-height: 3.8rem;
     color: black;
-    transition: 0.5s cubic-bezier(0,.97,.69,1);
+    transition: $sexyTransition;
     text-shadow: 0px 0px transparent;
     &:hover {
         text-shadow: 2px 2px #ddd;
@@ -269,7 +270,9 @@ body #magicMouseCursor {
     width: 100%;
     height: 0.25rem;
     background: #fff;
-    position: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
     z-index: 99;
 }
   
@@ -277,7 +280,7 @@ body #magicMouseCursor {
     height: 0.25rem;
     background: #000;
     width: 0%;
-    transition: 1.5s;
+    transition: 1s;
 }
 
 .blackWave {
@@ -293,9 +296,33 @@ body #magicMouseCursor {
 .blackness {
     background-color: black;
     color: white;
+    position: relative;
+    padding-bottom: 4rem;
     p {
         margin-left: 2rem;
         margin-right: 2rem;
+    }
+    &:after {
+        // background: linear-gradient(-45deg, #fff 1rem, #000 0), linear-gradient(45deg, #fff 1rem, #000 0);
+        // background-position: left bottom;
+        // background-repeat: repeat-x;
+        // background-size: 2rem 2rem;
+        // content: "";
+        // display: block;
+        // position: absolute;
+        // bottom: 0;
+        // left: 0;
+        // width: 100%;
+        // height: 2rem;
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0 2rem 100vw;
+        border-color: transparent transparent #fff transparent;
     }
 }
 
@@ -303,11 +330,29 @@ body #magicMouseCursor {
     color:white;
     & > a > img {
         filter: invert(1);
+        transition: $sexyTransition;
     }
 }
 
 .blackP {
     color: black;
+    & > a > img {
+        transition: $sexyTransition;
+    }
+}
+
+.gradientBg {
+    background: #a25ade;
+    background: linear-gradient(61deg, rgba(107,212,229,1) 0%, rgba(121,145,229,1) 25%, rgba(162,90,222,1) 50%, rgba(188,43,142,1) 75%, rgba(199,105,70,1) 100%);
+}
+
+.credits {
+    padding: 2rem 0 ;
+    &>a>img {
+        height: 3rem;
+    }
+    display: flex;
+    justify-content: space-evenly;
 }
 
 // Helpers
@@ -328,3 +373,4 @@ body #magicMouseCursor {
 ._salt3 { font-feature-settings: "salt" 3; font-family: inherit;}
 ._salt4 { font-feature-settings: "salt" 4; font-family: inherit;}
 ._invert { filter: invert(1) };
+._bgBlur { background-image: linear-gradient(to bottom, rgba(0,0,0,256), rgba(0,0,0,0)) };

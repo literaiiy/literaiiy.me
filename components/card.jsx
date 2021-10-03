@@ -17,11 +17,10 @@ class Card extends React.Component {
     // }
     
     return (
-      <a href={this.props.href} className='rellax' data-rellax-speed='-3' target="_blank">
+      <a href={this.props.href} className='rellax' data-rellax-speed='2' target="_blank">
         <div 
         className={`${this.props.i} card`} 
-        style={{marginBottom: +this.props.yAdj +2 + 'rem'}}
-        data-rellax-speed={this.props.rellaxSpeed}>
+        style={{marginBottom: +this.props.yAdj +2 + 'rem'}}>
           <div id={`${this.props.i}Desc`} className="cardOverlay">
             <div className="cardInside">
               <div>

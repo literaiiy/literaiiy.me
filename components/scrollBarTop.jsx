@@ -20,7 +20,7 @@ class ScrollBarTop extends React.Component {
   render() {
     return (
       <div className='scrollContainer'>
-        <div className="scrollBar" id='scrollBar'></div>
+        <div className={`${this.props.color} scrollBar`} id='scrollBar'></div>
       </div>
     )
   }

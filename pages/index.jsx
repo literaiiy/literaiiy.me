@@ -39,7 +39,7 @@ export default class Home extends Component {
           {/* Scripts & Libraries */}
           {/* <script type='text/javascript' src="/public/js/script.js"></script> */}
         </Head>
-        <ScrollBarTop/>
+        {/* <ScrollBarTop/> */}
         <Navbar/>
         <main>
         <Script strategy="afterInteractive" dangerouslySetInnerHTML={{
@@ -97,10 +97,6 @@ export default class Home extends Component {
                 This is my landing page, the home and crossroads sign for my many projects, powered by Facebook's
                 React framework and Vercel's Next.js metaframework.
               </p>
-              <h2>Credits</h2>
-              <p><b>Node.js</b></p>
-              <p><b>React</b></p>
-              <p><b>Next.js</b></p>
               <h2>Why JavaScript is the end-all for humanity</h2>
               <p>JavaScript, commonly referred to as the Mississipiian sewer rat, is one of the most
                 prominent "computer programming langyages" currently being used by avid programmers.
@@ -123,6 +119,13 @@ export default class Home extends Component {
               <p>
                 The new Samsung iPhone 6s is a real technological marvel. Marvel Studios. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut diam felis, rhoncus non rhoncus et, efficitur aliquet nibh. Etiam nunc ipsum, mattis quis arcu quis, gravida hendrerit odio. Fusce ac ornare arcu. Pellentesque sollicitudin elit non leo lacinia, in tincidunt erat vehicula. Mauris feugiat nunc velit, at ultricies ante interdum in. Aliquam pellentesque varius nulla, non varius tortor blandit quis. Curabitur faucibus augue ex, volutpat venenatis libero finibus et. Fusce vehicula metus id dolor sodales egestas. Morbi vehicula libero non augue tristique, et tincidunt arcu sodales. Mauris porta turpis eleifend ante malesuada, eu finibus urna elementum. Nulla congue est quis sapien maximus, et placerat nisl lacinia. Maecenas fringilla lectus sed augue aliquam, eget scelerisque ipsum pellentesque.
               </p>
+            </div>
+          </div>
+          <div>
+            <div class="credits">
+              <a href="https://nodejs.org/"><img src="https://gist.githubusercontent.com/literaiiy/0f8a22d56b24cb0357e22d15982bd446/raw/4fccc8eff284dd120d54a4734e297dbbfeb3fc14/toppng.com-node-js-logo-1902x512.svg" alt="Node.js" /></a>
+              <a href="https://reactjs.org/"><img src="https://gist.githubusercontent.com/literaiiy/0f8a22d56b24cb0357e22d15982bd446/raw/4fccc8eff284dd120d54a4734e297dbbfeb3fc14/react-js-blog-header.svg" alt="React" /></a>
+              <a href="https://nextjs.org/"><img src="https://gist.githubusercontent.com/literaiiy/0f8a22d56b24cb0357e22d15982bd446/raw/4fccc8eff284dd120d54a4734e297dbbfeb3fc14/Nextjs-logo.svg" alt="Next.js" /></a>
             </div>
           </div>
         </main>
