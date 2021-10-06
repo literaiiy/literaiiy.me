@@ -1,11 +1,6 @@
 @font-face {
-    font-family: "Doppelganger";
-    src: url("../fonts/Doppelganger.otf");
-}
-
-@font-face {
-    font-family: "Baron";
-    src: url("../fonts/Baron.otf");
+    font-family: "Reforma";
+    src: url("../fonts/Reforma.woff");
 }
 
 // Variables
@@ -13,6 +8,7 @@
 $_14px: 0.875rem;
 $_12px: 0.75rem;
 $lessBlack: #333;
+$lessWhite: #fafafa;
 $toolboxCream: #EEEFA8;
 $toolboxNavy: #162746;
 $dahliaYellow: #FDE256;
@@ -20,7 +16,7 @@ $dahliaOrange: #EB863A;
 $tiramisuLBrown: #CC5100;
 $tiramisuBrown: #7B3100;
 $logoFont: "Beattingvile";
-$headingFont: "Source Sans Pro";
+$headingFont: "Reforma";
 $bodyFont: "Source Sans Pro";
 $sexyTransition: 0.5s cubic-bezier(0,.97,.69,1);
 
@@ -120,7 +116,7 @@ footer {
 
 .card {
     border: 0.125rem solid black;
-    background-color: white;
+    background-color: $lessWhite;
     font-family: 'DM Serif Display';
     writing-mode: vertical-rl;
     padding: 1rem;
@@ -201,6 +197,7 @@ footer {
 .cardHeading {
     font-family: $headingFont;
     font-size: 2rem;
+    line-height: 2rem;
     font-weight: 900;
 }
 
@@ -269,7 +266,7 @@ body #magicMouseCursor {
 .scrollContainer {
     width: 100%;
     height: 0.25rem;
-    background: #fff;
+    background: #eee;
     position: absolute;
     top: 0;
     left: 0;
@@ -354,6 +351,56 @@ body #magicMouseCursor {
     display: flex;
     justify-content: space-evenly;
 }
+
+.fonts {
+    padding: 2rem 0;
+    &>a {
+        line-height: 4rem;
+    }
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+    justify-content: space-evenly;
+}
+
+.literaiiyLogo {
+    height: 12rem;
+    padding: 2rem 0;
+}
+
+.contactForm {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    width: 15rem;
+    margin: auto;
+    
+    input, textarea {
+        border: 0.125rem solid #fff;
+        background-color:#000;
+        color: #fff;
+        font-size: $_14px;
+    }
+    button {
+        border: 0.125rem solid #fff;
+        background-color: #000;
+        color: #fff;
+        font-size: $_14px;
+    }
+}
+
+.literaiiyCarousel {
+    gap: 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+// .footerHr {
+//     width: 90%;
+//     margin: auto;
+//     border: solid 1px #555;
+// }
 
 // Helpers
 
