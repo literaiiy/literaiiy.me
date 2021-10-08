@@ -12,12 +12,12 @@ class Card extends React.Component {
       let tagsArr = [];
       if (this.props.tags) { tagsArr = this['props']['tags'].split(' '); }
       for (let i of tagsArr) {
-        tagsList.push(<Tag i={i}/>)
+        tagsList.push(<Tag key={i} i={i}/>)
       }
     // }
     
     return (
-      <a href={this.props.href} className='rellax' data-rellax-speed='2' target="_blank">
+      <a href={this.props.href} target="_blank">
         <div 
         className={`${this.props.i} card`} 
         style={{marginBottom: +this.props.yAdj +2 + 'rem'}}>
@@ -43,18 +43,18 @@ class Tag extends React.Component {
 
   render() {
     let aliases = {
-      'flask': ["https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/flask.svg", "https://flask.palletsprojects.com/en/2.0.x/"],
-      'react': ["https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/react.svg", "https://reactjs.org/"],
-      'nextjs': ["https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/next-dot-js.svg", "https://nextjs.org/"],
-      'sass': ["https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/sass.svg", "https://sass-lang.com/"],
-      'tailwind': ["https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/tailwindcss.svg", "https://tailwindcss.com/"],
-      'wordpress': ["https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/wordpress.svg", "https://wordpress.org"]
+      'flask': ["https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/flask.svg", "https://flask.palletsprojects.com/en/2.0.x/", "Flask"],
+      'react': ["https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/react.svg", "https://reactjs.org/", "React"],
+      'nextjs': ["https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/next-dot-js.svg", "https://nextjs.org/", "Next.js"],
+      'sass': ["https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/sass.svg", "https://sass-lang.com/", "Sass"],
+      'tailwind': ["https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/tailwindcss.svg", "https://tailwindcss.com/", "Tailwind"],
+      'wordpress': ["https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/wordpress.svg", "https://wordpress.org", "WordPress"]
     }
 
     return (
-      <a href={aliases[this.props.i][1]}>
+      <div title={aliases[this.props.i][2]}>
         <img className='cardTagIcon' src={aliases[this.props.i][0]} alt={aliases[this.props.i][1]} />
-      </a>
+      </div>
     )
   }
 }

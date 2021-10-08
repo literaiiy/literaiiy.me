@@ -9,6 +9,7 @@ $_14px: 0.875rem;
 $_12px: 0.75rem;
 $lessBlack: #333;
 $lessWhite: #fafafa;
+$evenLessWhite: #ccc;
 $toolboxCream: #EEEFA8;
 $toolboxNavy: #162746;
 $dahliaYellow: #FDE256;
@@ -19,6 +20,30 @@ $logoFont: "Beattingvile";
 $headingFont: "Reforma";
 $bodyFont: "Source Sans Pro";
 $sexyTransition: 0.5s cubic-bezier(0,.97,.69,1);
+$medium: 640px;
+$small: 400px;
+
+// Mobile 
+
+@media screen and (max-width: $medium) {
+    .credits {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: $small) {
+    #rightSideNav {
+        flex-direction: column !important;
+        gap: 0.25rem !important;
+    }
+    #navDot {
+        display: none;
+    }
+    nav {
+        height: 9rem;
+    }
+}
 
 // Elements
 
@@ -87,7 +112,7 @@ footer {
 
 // Classes
 
-.rightSideNav {
+#rightSideNav {
     display: flex;
     height: 2rem;
     gap: 0.75rem;
@@ -164,12 +189,17 @@ footer {
     }
 }
 
+#ccc {
+    display: flex;
+    justify-content: center;
+}
+
 #cardList {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    // justify-content: safe center;
     align-items: flex-end;
-    overflow-x: none;
+    overflow-x: scroll;
     scrollbar-width: none;
 }
 
@@ -372,28 +402,60 @@ body #magicMouseCursor {
     display: flex;
     gap: 0.5rem;
     flex-direction: column;
-    width: 15rem;
+    width: 95vw;
+    max-width: 24rem;
     margin: auto;
     
-    input, textarea {
+    input {
         border: 0.125rem solid #fff;
         background-color:#000;
         color: #fff;
         font-size: $_14px;
+        outline: none;
+        transition: $sexyTransition;
+        &:focus {
+            border: 0.125rem solid $evenLessWhite;
+        }
+    }
+
+    textarea {
+        border: 0.125rem solid #fff;
+        background-color:#000;
+        color: #fff;
+        font-size: $_14px;
+        outline: none;
+        transition: $sexyTransition;
+        height: 6rem;
+        &:focus {
+            border: 0.125rem solid $evenLessWhite;
+        }
     }
     button {
         border: 0.125rem solid #fff;
         background-color: #000;
         color: #fff;
         font-size: $_14px;
+        outline: none;
+        transition: $sexyTransition;
+        &:hover {
+            border: 0.125rem solid $evenLessWhite;
+            color: $evenLessWhite;
+        }
     }
 }
 
-.literaiiyCarousel {
+.belt {
     gap: 6rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    & > img {
+        height: 12rem;
+        transition: $sexyTransition;
+        &:hover {
+            filter: invert(0.5)
+        }
+    }
 }
 
 // .footerHr {
