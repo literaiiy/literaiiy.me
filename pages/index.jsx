@@ -21,7 +21,6 @@ export default class Home extends Component {
           {/* Stylesheets */}
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-          <link href="http://fonts.cdnfonts.com/css/beattingvile" rel="stylesheet" />
           <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&family=Rozha+One&family=Devonshire&family=Yesteryear&family=Nanum+Brush+Script&family=Dancing+Script&family=Alex+Brush&family=Arizonia&family=Kristi&family=Birthstone+Bounce&family=DM+Serif+Display:ital@0;1&display=swap" />
           {/* Meta tags */}
           <meta name="title" content="Home - literaiiy.me"/>
@@ -136,10 +135,12 @@ export default class Home extends Component {
           </div>
         </main>
         <footer>
-          <div>
-            Copyright &#169; 2020-{new Date().getFullYear()} literaiiy. All rights reserved. Powered by
-
-            <a href='https://nextjs.org' className="semibold"> Next.js</a>.
+          <div id='footerDiv'>
+            <span>Copyright &#169; 2020-{new Date().getFullYear()} <span className='semibold'>literaiiy</span>. All rights reserved.</span>
+            <span>Built with <a href='https://nextjs.org' className="semibold">Next.js</a>.</span>
+            <span>Powered by <a href="https://vercel.com" className="semibold">Vercel</a>.</span>
+            <br />
+            <img src='https://gist.githubusercontent.com/literaiiy/b52115730334d1a5ffb2982cb51c74ce/raw/167b960705895571e8b4824d703168f937c142b8/icons8-dove-96.svg' id="svgBird"></img>
           </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/kursor@0.1.6/dist/kursor.min.js"></script>
