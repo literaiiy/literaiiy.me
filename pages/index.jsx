@@ -21,7 +21,7 @@ export default class Home extends Component {
           {/* Stylesheets */}
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&family=Rozha+One&family=Devonshire&family=Yesteryear&family=Nanum+Brush+Script&family=Dancing+Script&family=Alex+Brush&family=Arizonia&family=Kristi&family=Birthstone+Bounce&family=DM+Serif+Display:ital@0;1&display=swap" />
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&family=Satisfy&family=Norican" />
           {/* Meta tags */}
           <meta name="title" content="Home - literaiiy.me"/>
           <meta name="description" content="Hello! I am literaiiy (styled lowercase), a smartphone, web development & design, computer, and many-other-things enthusiast residing in the Bay Area."/>
@@ -69,6 +69,9 @@ export default class Home extends Component {
           <img className='blackWave _noselect' draggable="false" onScroll={this.handleScroll} src="https://gist.githubusercontent.com/literaiiy/064651428d421610deb99734c6e57916/raw/b9b71c37e361e1015da5d50c3e21302b73516852/blackee.svg"/>
           <div className="blackness"> 
             <div>
+              <div id='tagline'>
+                <b>M<span className="_cursive1">e</span>d<span className="_cursive1">io</span>cr<span className="_cursive1">e</span></b> web design. Even more <b>m<span className="_cursive2">e</span>d<span className="_cursive2">io</span>cr<span className="_cursive2">e</span></b> web development.
+              </div>
               <Belt />
               <h2>About me</h2>
               <p>

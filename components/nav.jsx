@@ -36,7 +36,7 @@ class Navbar extends React.Component {
         </a>
         <div id='rightSideNav' className={`${this.state.whiten ? "whiteP" : "blackP"}`}>
           <a className='_noselect' target='_blank' href="https://github.com/literaiiy"><img height="32" width="32" src="https://unpkg.com/simple-icons@v5/icons/github.svg" /></a>
-          <a className='_noselect' target='_blank' href="https://last.fm/user/literaiiy"><img height="32" width="32" src="https://unpkg.com/simple-icons@v5/icons/lastdotfm.svg" /></a>
+          {/* <a className='_noselect' target='_blank' href="https://last.fm/user/literaiiy"><img height="32" width="32" src="https://unpkg.com/simple-icons@v5/icons/lastdotfm.svg" /></a> */}
           <div id='navDot' className='_noselect'>·</div>
           <a className='_noselect _600'target='_blank' href="https://status.literaiiy.me">Status</a>
           <a className='_noselect _600' target='_blank' href="https://cl.literaiiy.me">Changelog</a>
