@@ -1,5 +1,6 @@
 import React from "react";
 import { render } from "react-dom";
+import BetaTag from "./betaTag";
 
 class Card extends React.Component {
   constructor(props) {
@@ -25,6 +26,7 @@ class Card extends React.Component {
             <div className="cardInside">
               <div>
                 <div className="cardHeading">{this.props.n}</div>
+                <BetaTag display={this.props.beta}/>
                 <p className="_14px">{this.props.desc}</p>
               </div>
               <div className="cardTagList">{tagsList}</div>

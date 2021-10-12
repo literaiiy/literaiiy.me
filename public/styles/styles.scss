@@ -1,3 +1,5 @@
+// Fonts
+
 @font-face {
     font-family: "Reforma";
     src: url("../fonts/ReformaBlanca.otf");
@@ -25,6 +27,26 @@
 @font-face {
     font-family: "Beattingvile";
     src: url("https://fonts.cdnfonts.com/s/21505/Beattingvile.woff");
+}
+
+// Transitions
+
+@keyframes fading {
+    from {
+        filter: grayscale(1);
+    }
+    to {
+        
+    }
+}
+
+@keyframes twisting {
+    from {
+        transform: translate(-50%, 50%)
+    }
+    to {
+        transform: translate(50%, -50%)
+    }
 }
 
 // Variables
@@ -166,7 +188,6 @@ footer {
 .card {
     border: 0.125rem solid black;
     background-color: $lessWhite;
-    font-family: 'DM Serif Display';
     writing-mode: vertical-rl;
     padding: 1rem;
     height: 36.25rem;
@@ -177,7 +198,7 @@ footer {
     flex:0;
     box-shadow: 0.5rem 0.5rem black;
     user-select: none;
-    transition: ease 0.6s;
+    transition: $sexyTransition;
     background-size: cover;
     background-position: center;
     &:hover {
@@ -211,6 +232,8 @@ footer {
             color: white;
         }
     }
+
+    animation: fading 2s ease;
 }
 
 #ccc {
@@ -479,6 +502,7 @@ body #magicMouseCursor {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    filter: brightness(1);
     & > img {
         height: 12rem;
         transition: $sexyTransition;
@@ -504,11 +528,19 @@ body #magicMouseCursor {
     font-family: $headingFont;
 }
 
-// .footerHr {
-//     width: 90%;
-//     margin: auto;
-//     border: solid 1px #555;
-// }
+.tagline1 {
+    line-height: 2rem;
+    animation: twisting 1s ease;
+    transform-style: preserve-3d;
+}
+
+.betaTag {
+    border-radius: 0.25rem;
+    color: white;
+    font-weight: bold;
+    font-family: $headingFont;
+    margin: auto;
+}
 
 // Helpers
 

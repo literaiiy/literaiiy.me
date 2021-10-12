@@ -22,6 +22,7 @@ export default class Home extends Component {
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
           <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&family=Satisfy&family=Norican" />
+          <link rel="canonical" href="https://literaiiy.me" />
           {/* Meta tags */}
           <meta name="title" content="Home - literaiiy.me"/>
           <meta name="description" content="Hello! I am literaiiy (styled lowercase), a smartphone, web development & design, computer, and many-other-things enthusiast residing in the Bay Area."/>
@@ -30,6 +31,13 @@ export default class Home extends Component {
           <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
           <meta name="language" content="English"/>
           <meta name="author" content="literaiiy"/>
+          
+          <meta property="og:title" content="Home - literaiiy.me" />
+          <meta property="og:site_name" content="literaiiy.me" />
+          <meta property="og:url" content="https://literaiiy.me" />
+          <meta property="og:description" content="Hello! I am literaiiy (styled lowercase), a smartphone, web development & design, computer, and many-other-things enthusiast residing in the Bay Area." />
+          <meta property="og:type" content="profile" />
+          <meta property="og:image" content="https://user-images.githubusercontent.com/64048778/136896416-258d2b8d-50b8-4983-8888-3fe2e4c1453f.png" />
           {/* Scripts & Libraries */}
           <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
         </Head>
@@ -52,7 +60,8 @@ export default class Home extends Component {
               <Card i='tbx' n='literaiiy Toolbox'
                     desc='literaiiy Toolbox is a collection of webtools created with the intention to provide people easy-to-use and useful (albeit sometimes obscure) utilities.'
                     yAdj='2' href='https://toolbox.literaiiy.me'
-                    tags='flask sass'/>
+                    tags='flask sass'
+                    beta/>
               <Card i='dah' n='dah.li/a'
                     desc="A personal blog, dah.li/a is a place where I post about a plethora of different topics; mainly smartphones, software, cool technology, and stuff like that— but occasionally other things, too! "
                     yAdj='0' href="https://dah.li/a"
@@ -70,7 +79,8 @@ export default class Home extends Component {
           <div className="blackness"> 
             <div>
               <div id='tagline'>
-                <b>M<span className="_cursive1">e</span>d<span className="_cursive1">io</span>cr<span className="_cursive1">e</span></b> web design. Even more <b>m<span className="_cursive2">e</span>d<span className="_cursive2">io</span>cr<span className="_cursive2">e</span></b> web development.
+                <span className="tagline1"><b>M<span className="_cursive1">e</span>d<span className="_cursive1">io</span>cr<span className="_cursive1">e</span></b> web design.</span>
+                <span className="tagline2"> Even more <b>m<span className="_cursive2">e</span>d<span className="_cursive2">io</span>cr<span className="_cursive2">e</span></b> web development.</span>
               </div>
               <Belt />
               <h2>About me</h2>
@@ -86,47 +96,16 @@ export default class Home extends Component {
                 not usually used correctly strictly by definition, but more as hyperbole; a common word that has dulled due to 
                 overuse.
               </p>
-              <p>
-                This is my landing page, the home and crossroads sign for my many projects, powered by Facebook's
-                React framework and Vercel's Next.js metaframework.
-              </p>
               <h2>
                 About literaiiy.me
               </h2>
               <p>
-                {/* literaiiy.me was originally built in Webflow back in November 2020 and was a simple webpage that hosted 
-                a few links to some of the sites I was planning to create in the future. At the start of the new year, I decided
-                that an upgrade was needed— an thus, I moved it over to WordPress hosted on a little VPS I had bought a few weeks prior.
-                With WordPress comes a nice content management system and a wide array of plugins and features allowing one to create
-                quite a nice-looking website, but the lack of full customizability and the notorious reputation of insecurity that comes with
-                a beginner-friendly site creator written in PHP drove me off. In September of 2021, I turned to re-building my site 
-                using React and Next.js,  */}
-
+                This is my landing page, the home and crossroads sign for my many projects, powered by Facebook's React framework and Vercel's Next.js metaframework.
+                Occasionally things may be shifted around to my liking, so don't be alarmed if the entire website changes within a month. New projects may
+                be added every now and then and displayed in the cards above if I'm cooking up some new stuff. Stay tuned!
               </p>
               <h2>Contact</h2>
               <Contact />
-              {/* <h2>Why JavaScript is the end-all for humanity</h2>
-              <p>JavaScript, commonly referred to as the Mississipiian sewer rat, is one of the most
-                prominent "computer programming langyages" currently being used by avid programmers.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tristique vehicula tincidunt. Quisque eu sollicitudin nibh. Quisque at purus eu odio bibendum vulputate sollicitudin vitae risus. Morbi id feugiat ligula. Proin vel pellentesque nunc, vitae molestie neque. In quis bibendum tortor, a ultrices urna. Quisque lobortis venenatis iaculis. Donec mi ex, mollis id sapien quis, ultricies ultricies ex. Sed vel pretium ligula. Ut ultricies elit non faucibus dictum.
-              </p>
-              <h2>So you bought a Node.js... what now?</h2>
-              <p>Nunc malesuada venenatis massa ut posuere. Aliquam sit amet sem eu felis cursus sollicitudin eu sed felis. Fusce ut massa nulla. Praesent at enim lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi commodo rutrum varius. Curabitur pulvinar vehicula lacus, quis posuere nisl pellentesque eget. Phasellus consequat odio sit amet ultrices euismod. Praesent pellentesque commodo velit. Donec condimentum augue in gravida gravida. Mauris ultricies pharetra lectus at commodo. Etiam pretium diam et nunc bibendum commodo. Duis sed est quis nibh ornare efficitur. Vivamus volutpat rutrum risus et pretium.
-                Be sure to water your Node.js every few months to make sure that its bone structure stays intact and doesn't spontaneously blow up your house.
-              </p>
-              <h2>Top 10 Programming Languages that Aren't C++</h2>
-              <p>
-                C++ is one of the worst programming languages out there, being the name of a soda brand. Here are the top 10 reasons to hate C++. In in faucibus dolor. Fusce molestie placerat facilisis. Maecenas eu porta lacus. Proin lectus purus, porta a faucibus eget, tristique sed nunc. Sed consequat, urna a malesuada tempor, sapien neque euismod tellus, et ultricies libero ex sed sem. Fusce malesuada egestas tellus cursus volutpat. Nulla facilisi. In eu dictum eros, ullamcorper efficitur mauris. Proin ac vehicula sapien, a condimentum orci. Aenean et elementum sem, eget finibus sapien. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque id mattis nulla. Aenean rutrum dui nec lectus laoreet tincidunt. And that's it for today. Stay tuned next week when we take an in-depth look at Ruby on Rails.
-              </p>
-              <h2>
-                Plants, Python, Anacondas, and why Microsoft is secretly trying to colonize Africa
-              </h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut diam felis, rhoncus non rhoncus et, efficitur aliquet nibh. Etiam nunc ipsum, mattis quis arcu quis, gravida hendrerit odio. Fusce ac ornare arcu. Pellentesque sollicitudin elit non leo lacinia, in tincidunt erat vehicula. Mauris feugiat nunc velit, at ultricies ante interdum in. Aliquam pellentesque varius nulla, non varius tortor blandit quis. Curabitur faucibus augue ex, volutpat venenatis libero finibus et. Fusce vehicula metus id dolor sodales egestas. Morbi vehicula libero non augue tristique, et tincidunt arcu sodales. Mauris porta turpis eleifend ante malesuada, eu finibus urna elementum. Nulla congue est quis sapien maximus, et placerat nisl lacinia. Maecenas fringilla lectus sed augue aliquam, eget scelerisque ipsum pellentesque.</p>
-              <p>Despite all the negative press release, Microsoft has shown no interest in stopping. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut diam felis, rhoncus non rhoncus et, efficitur aliquet nibh. Etiam nunc ipsum, mattis quis arcu quis, gravida hendrerit odio. Fusce ac ornare arcu. Pellentesque sollicitudin elit non leo lacinia, in tincidunt erat vehicula. Mauris feugiat nunc velit, at ultricies ante interdum in. Aliquam pellentesque varius nulla, non varius tortor blandit quis. Curabitur faucibus augue ex, volutpat venenatis libero finibus et. Fusce vehicula metus id dolor sodales egestas. Morbi vehicula libero non augue tristique, et tincidunt arcu sodales. Mauris porta turpis eleifend ante malesuada, eu finibus urna elementum. Nulla congue est quis sapien maximus, et placerat nisl lacinia. Maecenas fringilla lectus sed augue aliquam, eget scelerisque ipsum pellentesque.</p>
-              <h2>Eating the new iPhone 6s</h2>
-              <p>
-                The new Samsung iPhone 6s is a real technological marvel. Marvel Studios. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut diam felis, rhoncus non rhoncus et, efficitur aliquet nibh. Etiam nunc ipsum, mattis quis arcu quis, gravida hendrerit odio. Fusce ac ornare arcu. Pellentesque sollicitudin elit non leo lacinia, in tincidunt erat vehicula. Mauris feugiat nunc velit, at ultricies ante interdum in. Aliquam pellentesque varius nulla, non varius tortor blandit quis. Curabitur faucibus augue ex, volutpat venenatis libero finibus et. Fusce vehicula metus id dolor sodales egestas. Morbi vehicula libero non augue tristique, et tincidunt arcu sodales. Mauris porta turpis eleifend ante malesuada, eu finibus urna elementum. Nulla congue est quis sapien maximus, et placerat nisl lacinia. Maecenas fringilla lectus sed augue aliquam, eget scelerisque ipsum pellentesque.
-              </p> */}
             </div>
           </div>
           <div>
