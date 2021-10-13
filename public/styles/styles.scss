@@ -215,21 +215,21 @@ footer {
         opacity: 1;
     }
     &.tbx {
-        background-image: url("https://user-images.githubusercontent.com/64048778/132974059-3c24230b-863e-43d0-a8ab-048da7d45300.png");
+        background-image: url("/littoolbo.webp");
         &:hover {
             box-shadow: 0.25rem 0.25rem $toolboxCream;
             border-color: $toolboxCream;
         }
     }
     &.dah {
-        background-image: url("https://user-images.githubusercontent.com/64048778/132967468-99a8e7c0-43a0-4579-94b2-09b770595a76.png");
+        background-image: url("/dahli.webp");
         &:hover {
             box-shadow: 0.25rem 0.25rem $dahliaOrange;
             border-color: $dahliaOrange;
         }
     }
     &.tir {
-        background-image: url("https://user-images.githubusercontent.com/64048778/132967474-563cab06-8dc1-4d5a-accf-caccadfd468a.png");
+        background-image: url("/tiramis.webp");
         &:hover {
             box-shadow: 0.25rem 0.25rem $tiramisuBrown;
             border-color: $tiramisuBrown;
