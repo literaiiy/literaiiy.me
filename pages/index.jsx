@@ -42,6 +42,7 @@ export default class Home extends Component {
             <meta name="twitter:card" content="summary" />
             <meta name="twitter:title" content="Home - literaiiy.me" />
             <meta name="twitter:description" content="Hello! I am literaiiy (styled lowercase), a smartphone, web development & design, computer, and many-other-things enthusiast residing in the Bay Area."/ >
+            <meta name="twitter:image" content="https://user-images.githubusercontent.com/64048778/136896416-258d2b8d-50b8-4983-8888-3fe2e4c1453f.png"/>
           {/* Scripts & Libraries */}
           <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
         </Head>
