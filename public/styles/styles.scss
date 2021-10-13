@@ -90,6 +90,10 @@ $small: 400px;
 
 // Elements
 
+html {
+    direction: ltr;
+}
+
 * {
     text-align: center;
     &::selection {
@@ -129,8 +133,9 @@ nav {
 p {
     font-family: $bodyFont;
     color:inherit;
-    margin: 0;
-    padding: 0.5rem;
+    margin: auto;
+    padding: 0.5rem 2rem;
+    max-width: 60rem;
 }
 
 a {
@@ -372,10 +377,6 @@ body #magicMouseCursor {
     color: white;
     position: relative;
     padding-bottom: 4rem;
-    p {
-        margin-left: 2rem;
-        margin-right: 2rem;
-    }
     &:after {
         // background: linear-gradient(-45deg, #fff 1rem, #000 0), linear-gradient(45deg, #fff 1rem, #000 0);
         // background-position: left bottom;
