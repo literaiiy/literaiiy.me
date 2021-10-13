@@ -134,7 +134,7 @@ p {
     font-family: $bodyFont;
     color:inherit;
     margin: auto;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem;
     max-width: 60rem;
 }
 
@@ -377,6 +377,9 @@ body #magicMouseCursor {
     color: white;
     position: relative;
     padding-bottom: 4rem;
+    p {
+        padding: 0.5rem 2rem;
+    }
     &:after {
         // background: linear-gradient(-45deg, #fff 1rem, #000 0), linear-gradient(45deg, #fff 1rem, #000 0);
         // background-position: left bottom;

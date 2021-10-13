@@ -22,7 +22,7 @@ class Card extends React.Component {
         <div 
         className={`${this.props.i} card`} 
         style={{marginBottom: +this.props.yAdj +2 + 'rem'}}>
-          <div id={`${this.props.i}Desc`} className="cardOverlay">
+          <div  className="cardOverlay">
             <div className="cardInside">
               <div>
                 <div className="cardHeading">{this.props.n}</div>
