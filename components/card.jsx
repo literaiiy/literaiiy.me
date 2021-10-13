@@ -18,7 +18,7 @@ class Card extends React.Component {
     // }
     
     return (
-      <a href={this.props.href} target="_blank">
+      <a href={this.props.href} >
         <div 
         className={`${this.props.i} card`} 
         style={{marginBottom: +this.props.yAdj +2 + 'rem'}}>
