@@ -3,18 +3,21 @@
 @font-face {
     font-family: "Reforma";
     src: url("../fonts/ReformaBlanca.otf");
+    font-display: swap
 }
 
 @font-face {
     font-family: "Reforma";
     src: url("../fonts/ReformaNegra.woff");
     font-weight: bold;
+    font-display: swap
 }
 
 @font-face {
     font-family: "Reforma";
     src: url("../fonts/ReformaBlancaItalica.otf");
     font-style: italic;
+    font-display: swap
 }
 
 @font-face {
@@ -22,11 +25,13 @@
     src: url("../fonts/ReformaNegraItalica.otf");
     font-style: italic;
     font-weight: bold !important;
+    font-display: swap
 }
 
 @font-face {
     font-family: "Beattingvile";
     src: url("https://fonts.cdnfonts.com/s/21505/Beattingvile.woff");
+    font-display: swap
 }
 
 // Transitions
