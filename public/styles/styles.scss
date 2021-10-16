@@ -2,27 +2,27 @@
 
 @font-face {
     font-family: "Reforma";
-    src: url("../fonts/ReformaBlanca.otf");
+    src: url("../fonts/ReformaBlanca.woff2");
     font-display: swap
 }
 
 @font-face {
     font-family: "Reforma";
-    src: url("../fonts/ReformaNegra.woff");
+    src: url("../fonts/ReformaNegra.woff2");
     font-weight: bold;
     font-display: swap
 }
 
 @font-face {
     font-family: "Reforma";
-    src: url("../fonts/ReformaBlancaItalica.otf");
+    src: url("../fonts/ReformaBlancaItalica.woff2");
     font-style: italic;
     font-display: swap
 }
 
 @font-face {
     font-family: "Reforma";
-    src: url("../fonts/ReformaNegraItalica.otf");
+    src: url("../fonts/ReformaNegraItalica.woff2");
     font-style: italic;
     font-weight: bold !important;
     font-display: swap
@@ -87,6 +87,9 @@ $small: 400px;
     #rightSideNav {
         flex-direction: column !important;
         gap: 0.25rem !important;
+    }
+    nav {
+        padding: 1rem 1rem 1.5rem 1rem !important;
     }
     #navDot {
         display: none;
