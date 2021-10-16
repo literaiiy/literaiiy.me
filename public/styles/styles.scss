@@ -97,6 +97,7 @@ $small: 400px;
 
 html {
     direction: ltr;
+    scroll-behavior: smooth;
 }
 
 * {
@@ -200,7 +201,7 @@ footer {
     background-color: $lessWhite;
     writing-mode: vertical-rl;
     padding: 1rem;
-    height: 36.25rem;
+    height: 60vh;
     min-width: 7.5rem;
     margin: 1rem 0.75rem;
     z-index: 2;
@@ -220,21 +221,21 @@ footer {
         opacity: 1;
     }
     &.tbx {
-        background-image: url("/littoolbo.webp");
+        background-image: url("/images/littoolbo.webp");
         &:hover {
             box-shadow: 0.25rem 0.25rem $toolboxCream;
             border-color: $toolboxCream;
         }
     }
     &.dah {
-        background-image: url("/dahli.webp");
+        background-image: url("/images/dahli.webp");
         &:hover {
             box-shadow: 0.25rem 0.25rem $dahliaOrange;
             border-color: $dahliaOrange;
         }
     }
     &.tir {
-        background-image: url("/tiramis.webp");
+        background-image: url("/images/tiramis.webp");
         &:hover {
             box-shadow: 0.25rem 0.25rem $tiramisuBrown;
             border-color: $tiramisuBrown;
@@ -381,22 +382,11 @@ body #magicMouseCursor {
     background-color: black;
     color: white;
     position: relative;
-    padding-bottom: 4rem;
+    padding: 4rem 0;
     p {
         padding: 0.5rem 2rem;
     }
     &:after {
-        // background: linear-gradient(-45deg, #fff 1rem, #000 0), linear-gradient(45deg, #fff 1rem, #000 0);
-        // background-position: left bottom;
-        // background-repeat: repeat-x;
-        // background-size: 2rem 2rem;
-        // content: "";
-        // display: block;
-        // position: absolute;
-        // bottom: 0;
-        // left: 0;
-        // width: 100%;
-        // height: 2rem;
         content: '';
         position: absolute;
         bottom: 0;
@@ -549,6 +539,15 @@ body #magicMouseCursor {
     font-weight: bold;
     font-family: $headingFont;
     margin: auto;
+}
+
+.rellax {
+    position: absolute;
+    width: 10rem;
+    height: auto;
+    z-index: -10;
+    top: 16rem;
+    left: 0;
 }
 
 // Helpers
