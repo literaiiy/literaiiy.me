@@ -3,21 +3,21 @@
 @font-face {
     font-family: "Reforma";
     src: url("../fonts/ReformaBlanca.woff2");
-    font-display: swap
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Reforma";
     src: url("../fonts/ReformaNegra.woff2");
     font-weight: bold;
-    font-display: swap
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Reforma";
     src: url("../fonts/ReformaBlancaItalica.woff2");
     font-style: italic;
-    font-display: swap
+    font-display: swap;
 }
 
 @font-face {
@@ -25,13 +25,13 @@
     src: url("../fonts/ReformaNegraItalica.woff2");
     font-style: italic;
     font-weight: bold !important;
-    font-display: swap
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Beattingvile";
     src: url("https://fonts.cdnfonts.com/s/21505/Beattingvile.woff");
-    font-display: swap
+    font-display: swap;
 }
 
 // Transitions
@@ -115,11 +115,14 @@ body {
     margin:0;
 }
 
-h1.fpLogo {
-    font-size: 10rem;
-    z-index: 0;
-    margin-bottom: -6rem;
-    user-select: none;
+h1 {
+    line-height: 2rem;
+    fpLogo {
+        font-size: 10rem;
+        z-index: 0;
+        margin-bottom: -6rem;
+        user-select: none;
+    }
 }
 
 h1, h2, h3, h4, h5 {
@@ -145,6 +148,7 @@ p {
     margin: auto;
     padding: 0.5rem;
     max-width: 60rem;
+    line-height: 1rem;
 }
 
 a {
@@ -313,11 +317,6 @@ footer {
     font-family: inherit;
 }
 
-#dotMe {
-    font-family: 'Arizonia';
-    height:1rem;
-}
-
 .titleFont {
     font-family: $logoFont;
     font-size: 5rem;
@@ -373,7 +372,7 @@ body #magicMouseCursor {
 
 .blackWave {
     display: block;
-    width: 100vw;
+    width: 100%;
     height: auto;
     padding: 2rem 0 0 0;
     left: 0;
@@ -509,7 +508,7 @@ body #magicMouseCursor {
         height: 12rem;
         transition: $sexyTransition;
         &:hover {
-            filter: invert(0.5)
+            filter: invert(0.5);
         }
     }
 }
@@ -551,6 +550,11 @@ body #magicMouseCursor {
     z-index: -10;
     top: 16rem;
     left: 0;
+}
+
+.errorImg {
+    height: calc(100vh - 8.25rem);
+    max-width: 100%;
 }
 
 // Helpers
