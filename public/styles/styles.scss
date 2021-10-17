@@ -1,4 +1,4 @@
-// Fonts
+/* Fonts */
 
 @font-face {
     font-family: "Reforma";
@@ -34,7 +34,7 @@
     font-display: swap;
 }
 
-// Transitions
+/* Transitions */
 
 @keyframes fading {
     from {
@@ -54,7 +54,7 @@
     }
 }
 
-// Variables
+/* Variables */
 
 $_14px: 0.875rem;
 $_12px: 0.75rem;
@@ -74,7 +74,7 @@ $sexyTransition: 0.5s cubic-bezier(0,.97,.69,1);
 $medium: 640px;
 $small: 400px;
 
-// Mobile 
+/* Mobile */ 
 
 @media screen and (max-width: $medium) {
     .credits {
@@ -96,7 +96,7 @@ $small: 400px;
     }
 }
 
-// Elements
+/* Elements */
 
 html {
     direction: ltr;
@@ -173,7 +173,7 @@ footer {
     background-color: $lessWhite;
 }
 
-// Classes
+/* Classes */
 
 #rightSideNav {
     font-family: $bodyFont;
@@ -262,7 +262,6 @@ footer {
 #cardList {
     display: flex;
     flex-direction: row;
-    // justify-content: safe center;
     align-items: flex-end;
     overflow-x: scroll;
     scrollbar-width: none;
@@ -330,27 +329,6 @@ footer {
     &.whiteP:hover {
         text-shadow: 2px 2px #444;
     }
-}
-
-// Pseudo
-
-::-webkit-scrollbar {
-    display: none;
-}
-
-// Magic Mouse
-
-body #magicMouseCursor {
-    position: fixed;
-    width: 35px;
-    height: 35px;
-    border: 1px solid #000;
-    border-radius: 50%;
-    z-index: 9999;
-    left: -100px;
-    top: 0;
-    transition: transform 0.07s, width 0.3s, height 0.3s;
-    pointer-events: none; 
 }
 
 .scrollContainer {
@@ -545,11 +523,12 @@ body #magicMouseCursor {
 
 .rellax {
     position: absolute;
-    width: 10rem;
-    height: auto;
     z-index: -10;
-    top: 16rem;
     left: 0;
+}
+
+.birds1 {
+    top: 2rem;
 }
 
 .errorImg {
@@ -557,7 +536,14 @@ body #magicMouseCursor {
     max-width: 100%;
 }
 
-// Helpers
+/* Pseudo */
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* Helpers */
 
 ._14px { font-size: 0.875rem }
 ._100, .lightest { font-weight: 100 }

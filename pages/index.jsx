@@ -18,7 +18,7 @@ export default class Home extends Component {
         <Navbar/>
         <main>
           <div>
-            <img className="rellax" data-rellax-speed="-3" src="https://upload.wikimedia.org/wikipedia/commons/1/16/Font_Awesome_5_solid_cloud.svg" alt="" />
+            <img className="rellax birds1" data-rellax-speed="-3" src="/images/birds1.svg" alt="" />
           </div>
           <div id="ccc">
             <div id="cardList">
@@ -87,7 +87,7 @@ export default class Home extends Component {
             <span>Built with <a href='https://nextjs.org' className="semibold">Next.js</a>.</span>
             <span>Powered by <a href="https://vercel.com" className="semibold">Vercel</a>.</span>
             <br />
-            <img src='https://gist.githubusercontent.com/literaiiy/b52115730334d1a5ffb2982cb51c74ce/raw/167b960705895571e8b4824d703168f937c142b8/icons8-dove-96.svg' id="svgBird"></img>
+            <img src='https://gist.githubusercontent.com/literaiiy/b52115730334d1a5ffb2982cb51c74ce/raw/167b960705895571e8b4824d703168f937c142b8/icons8-dove-96.svg' id="svgBird" alt="SVG Bird"></img>
           </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/kursor@0.1.6/dist/kursor.min.js"></script>
