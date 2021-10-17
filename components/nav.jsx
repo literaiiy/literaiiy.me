@@ -35,10 +35,10 @@ class Navbar extends React.Component {
           <span className={`${this.state.whiten ? "whiteP" : "blackP"} titleFont`}><span className="_salt1">l</span>iteraiiy</span>
         </a>
         <div id='rightSideNav' className={`${this.state.whiten ? "whiteP" : "blackP"}`}>
-          <a className='_noselect' target='_blank' href="https://github.com/literaiiy"><img height="32" width="32" src="https://unpkg.com/simple-icons@v5/icons/github.svg" alt="GitHub" /></a>
+          <a className='_noselect' target='_blank' href="https://github.com/literaiiy" rel="noopener"><img height="32" width="32" src="https://unpkg.com/simple-icons@v5/icons/github.svg" alt="GitHub" /></a>
           <div id='navDot' className='_noselect'>·</div>
-          <a className='_noselect _600'target='_blank' href="https://status.literaiiy.me">Status</a>
-          <a className='_noselect _600' target='_blank' href="https://cl.literaiiy.me">Changelog</a>
+          <a className='_noselect _600'target='_blank' href="https://status.literaiiy.me" rel="noopener">Status</a>
+          <a className='_noselect _600' target='_blank' href="https://cl.literaiiy.me" rel="noopener">Changelog</a>
         </div>
       </nav>
     )

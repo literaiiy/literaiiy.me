@@ -18,7 +18,7 @@ export default class Home extends Component {
         <Navbar/>
         <main>
           <div>
-            <img className="rellax birds1" data-rellax-speed="-3" src="/images/birds1.svg" alt="" />
+            <img className="rellax birds1" data-rellax-speed="-3" src="/images/birds1.svg" alt="more birds" />
           </div>
           <div id="ccc">
             <div id="cardList">
