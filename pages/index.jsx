@@ -41,10 +41,10 @@ export default class Home extends Component {
           <img className='blackWave _noselect' draggable="false" onScroll={this.handleScroll} src="/images/blackWave.svg" alt="black wave"/>
           <div className="blackness"> 
             <div>
-              <div id='tagline'>
+              <h1 id='tagline'>
                 <span className="tagline1"><b>M<span className="_cursive1">e</span>d<span className="_cursive1">io</span>cr<span className="_cursive1">e</span></b> web design.</span>
                 <span className="tagline2"> Even more <b>m<span className="_cursive2">e</span>d<span className="_cursive2">io</span>cr<span className="_cursive2">e</span></b> web development.</span>
-              </div>
+              </h1>
               <Belt />
               <h2>About me</h2>
               <p>

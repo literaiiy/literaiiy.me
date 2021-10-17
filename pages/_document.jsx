@@ -20,6 +20,7 @@ class DOM extends Document {
           <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
           <meta name="language" content="English"/>
           <meta name="author" content="literaiiy"/>
+          <meta name="theme-color" media="(prefers-color-scheme: light)" content="white" />
             {/* OpenGraph */}
             <meta property="og:title" content="Home - literaiiy.me" />
             <meta property="og:site_name" content="literaiiy.me" />
