@@ -1,10 +1,8 @@
 import React, { Component } from "react";
 import Navbar from '../components/nav.jsx'
 import Card from '../components/card.jsx'
-import Script from 'next/script'
 import Contact from "../components/contact.jsx";
 import Belt from "../components/belt.jsx";
-import Image from 'next/image'
 
 export default class Home extends Component {
   constructor(props) {
@@ -40,7 +38,7 @@ export default class Home extends Component {
               <Card n='' yAdj='3' tags=''/>
             </div>
           </div>
-          <img className='blackWave _noselect' draggable="false" onScroll={this.handleScroll} src="/images/blackWave.svg"/>
+          <img className='blackWave _noselect' draggable="false" onScroll={this.handleScroll} src="/images/blackWave.svg" alt="black wave"/>
           <div className="blackness"> 
             <div>
               <div id='tagline'>

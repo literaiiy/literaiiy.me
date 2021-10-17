@@ -9,32 +9,39 @@ class Card extends React.Component {
 
   render() {
     let tagsList = [];
-    // function getLinks(str) {
-      let tagsArr = [];
-      if (this.props.tags) { tagsArr = this['props']['tags'].split(' '); }
-      for (let i of tagsArr) {
-        tagsList.push(<Tag key={i} i={i}/>)
-      }
-    // }
-    
-    return (
-      <a href={this.props.href} >
+    let tagsArr = [];
+    if (this.props.tags) { tagsArr = this['props']['tags'].split(' '); }
+    for (let i of tagsArr) {
+      tagsList.push(<Tag key={i} i={i}/>)
+    }
+
+    if (this.props.i) {
+      return (
         <div 
         className={`${this.props.i} card`} 
         style={{marginBottom: +this.props.yAdj +2 + 'rem'}}>
-          <div  className="cardOverlay">
-            <div className="cardInside">
-              <div>
-                <div className="cardHeading">{this.props.n}</div>
-                <BetaTag display={this.props.beta}/>
-                <p className="_14px">{this.props.desc}</p>
+          <a href={this.props.href} >
+            <div  className="cardOverlay">
+              <div className="cardInside">
+                <div>
+                  <div className="cardHeading">{this.props.n}</div>
+                  <BetaTag display={this.props.beta}/>
+                  <p className="_14px">{this.props.desc}</p>
+                </div>
+                <div className="cardTagList">{tagsList}</div>
               </div>
-              <div className="cardTagList">{tagsList}</div>
             </div>
-          </div>
+          </a>
         </div>
-      </a>
-    )
+      )
+    } else {
+      return (
+        <div 
+        className={`card`} 
+        style={{marginBottom: +this.props.yAdj +2 + 'rem'}}>
+        </div>
+      )
+    }
   }
 }
 

@@ -224,9 +224,6 @@ footer {
         border-color: $lessBlack;
         color: $lessBlack;
     }
-    &:hover > .cardOverlay {
-        opacity: 1;
-    }
     &.tbx {
         background-image: url("/images/littoolbo.webp");
         &:hover {
@@ -274,10 +271,13 @@ footer {
     text-align: left;
     opacity: 0;
     color: white;
-    transition: inherit;
+    transition: $sexyTransition;
     height: calc(100% + 2rem);
     width: 9.5rem;
     margin: -1rem;
+    &:hover {
+        opacity: 1;
+    }
 }
 
 .cardInside {
