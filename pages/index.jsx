@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Navbar from '../components/nav.jsx'
 import Card from '../components/card.jsx'
 import Contact from "../components/contact.jsx";
-import Belt from "../components/belt.jsx";
+import Tagline from "../components/tagline.jsx";
 
 export default class Home extends Component {
   constructor(props) {
@@ -41,11 +41,8 @@ export default class Home extends Component {
           <img className='blackWave _noselect' draggable="false" onScroll={this.handleScroll} src="/images/blackWave.svg" alt="black wave"/>
           <div className="blackness"> 
             <div>
-              <h1 id='tagline'>
-                <span className="tagline1"><b>M<span className="_cursive1">e</span>d<span className="_cursive1">io</span>cr<span className="_cursive1">e</span></b> web design.</span>
-                <span className="tagline2"> Even more <b>m<span className="_cursive2">e</span>d<span className="_cursive2">io</span>cr<span className="_cursive2">e</span></b> web development.</span>
-              </h1>
-              <Belt />
+              <Tagline />
+              <img className="belt" src="/images/literaiiyBirdWhite.svg" alt="literaiiy" />
               <h2>About me</h2>
               <p>
                 Hello! I am literaiiy, a high school student in the San Francisco Bay Area who enjoys working
@@ -85,7 +82,7 @@ export default class Home extends Component {
             <span>Built with <a href='https://nextjs.org' className="semibold">Next.js</a>.</span>
             <span>Powered by <a href="https://vercel.com" className="semibold">Vercel</a>.</span>
             <br />
-            <img src='https://gist.githubusercontent.com/literaiiy/b52115730334d1a5ffb2982cb51c74ce/raw/167b960705895571e8b4824d703168f937c142b8/icons8-dove-96.svg' id="svgBird" alt="SVG Bird"></img>
+            <img src='/images/literaiiyBird.svg' id="svgBird" alt="SVG Bird"></img>
           </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/kursor@0.1.6/dist/kursor.min.js"></script>
