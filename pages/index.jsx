@@ -32,7 +32,10 @@ export default class Home extends Component {
               <Card i='tir' n='tiramisu'
                     desc="tiramisu is a player statistics site for the popular 	&#34;Minecraft&#34; server Hypixel that gives a comprehensive outlook on a player's profile, reporting name history, game performance across multiple modes, information about the user, and more."
                     yAdj='1' href="https://tiramisu.vip" tags='flask tailwind sass'/>
-              <Card n='' yAdj='2' tags=''/>
+              <Card i='pas' n='Passiflora' 
+                    yAdj='2' href="https://passiflora.literaiiy.me"
+                    desc="Passiflora is a customizable and minimalist time organization application used to easily manage schedules and routines for work, school, day-to-day activities, and much more."
+                    tags='nextjs react'/>
               <Card n='' yAdj='3' tags=''/>
               <Card n='' yAdj='2' tags=''/>
               <Card n='' yAdj='3' tags=''/>

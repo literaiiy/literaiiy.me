@@ -247,6 +247,9 @@ footer {
             color: white;
         }
     }
+    &.pas {
+      background-image: url("/images/passif.webp")
+    }
 
     animation: fading 2s ease;
 }
@@ -290,7 +293,7 @@ footer {
 
 .cardHeading {
     font-family: $headingFont;
-    font-size: 2rem;
+    font-size: 1.875rem;
     line-height: 2rem;
     font-weight: 900;
 }
