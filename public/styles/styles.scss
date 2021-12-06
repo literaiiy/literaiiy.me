@@ -67,6 +67,8 @@ $dahliaYellow: #FDE256;
 $dahliaOrange: #EB863A;
 $tiramisuLBrown: #CC5100;
 $tiramisuBrown: #7B3100;
+$passifloraMagenta: #db6a8a;
+$passifloraDarker: #bb4667;
 $logoFont: "Beattingvile";
 $headingFont: "Reforma";
 $bodyFont: "Source Sans Pro";
@@ -248,7 +250,13 @@ footer {
         }
     }
     &.pas {
-      background-image: url("/images/passif.webp")
+      background-image: url("/images/passif.webp");
+      &:hover {
+        box-shadow: 0.25rem 0.25rem $passifloraDarker;
+        border-color: $passifloraMagenta;
+        background-color: $passifloraMagenta;
+        color: white;
+      }
     }
 
     animation: fading 2s ease;
