@@ -35,7 +35,8 @@ export default class Home extends Component {
               <Card i='pas' n='Passiflora' 
                     yAdj='2' href="https://passiflora.literaiiy.me"
                     desc="Passiflora is a customizable and minimalist time organization application used to easily manage schedules and routines for work, school, day-to-day activities, and much more."
-                    tags='nextjs react'/>
+                    tags='nextjs react'
+                    beta/>
               <Card n='' yAdj='3' tags=''/>
               <Card n='' yAdj='2' tags=''/>
               <Card n='' yAdj='3' tags=''/>
