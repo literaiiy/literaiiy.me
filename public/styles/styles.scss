@@ -73,16 +73,19 @@ $logoFont: "Beattingvile";
 $headingFont: "Reforma";
 $bodyFont: "Source Sans Pro";
 $sexyTransition: 0.5s cubic-bezier(0,.97,.69,1);
-$medium: 640px;
+$medium: 720px;
 $small: 400px;
 
 /* Mobile */ 
 
 @media screen and (max-width: $medium) {
-    .credits {
-        flex-direction: column;
-        gap: 2rem;
-    }
+  .credits {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .underlineSvg {
+    display: none;
+  }
 }
 
 @media screen and (max-width: $small) {
@@ -513,9 +516,10 @@ footer {
 }
 
 .tagline1 {
-    line-height: 2rem;
-    transform: rotateX(45deg);
-    perspective: 600px;
+  line-height: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .betaTag {
@@ -540,6 +544,15 @@ footer {
 .errorImg {
     height: calc(100vh - 8.25rem);
     max-width: 100%;
+}
+
+.underlineh1 {
+  stroke: #ffffff;
+}
+
+.taglineFlex {
+  display: flex;
+  flex-direction: column;
 }
 
 /* Pseudo */
@@ -568,5 +581,5 @@ footer {
 ._salt4 { font-feature-settings: "salt" 4; font-family: inherit;}
 ._invert { filter: invert(1) };
 ._bgBlur { background-image: linear-gradient(to bottom, rgba(0,0,0,256), rgba(0,0,0,0)) };
-._cursive1 { font-family: "Satisfy" };
+._cursive1 { font-family: "Satisfy"; font-size: 2.25rem };
 ._cursive2 { font-family: "Norican" }

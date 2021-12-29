@@ -50,7 +50,7 @@ export default class Home extends Component {
               <h2>About me</h2>
               <p>
                 Hello! I am literaiiy, a high school student in the San Francisco Bay Area who enjoys working
-                with technology-related things; mainly mobile devices, software, web design and development, 
+                with technology-related things: mobile devices, software, web design and development, 
                 and much more. Having been fascinated by computers from a young age, I have accumulated years
                 worth of knowledge but am always eager to learn more.
               </p>
