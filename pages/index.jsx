@@ -23,19 +23,19 @@ export default class Home extends Component {
               <Card i='tbx' n='literaiiy Toolbox'
                     desc='literaiiy Toolbox is a collection of webtools created with the intention to provide people easy-to-use and useful (albeit sometimes obscure) utilities.'
                     yAdj='2' href='https://toolbox.literaiiy.me'
-                    tags='flask sass'
+                    tags='flask'
                     beta/>
               <Card i='dah' n='dah.li/a'
                     desc="A personal blog, dah.li/a is a place where I post about a plethora of different topics; mainly smartphones, software, cool technology, and stuff like that— but occasionally other things, too! "
                     yAdj='0' href="https://dah.li/a"
-                    tags='wordpress'/>
+                    tags='wordpress nextjs'/>
               <Card i='tir' n='tiramisu'
                     desc="tiramisu is a player statistics site for the popular 	&#34;Minecraft&#34; server Hypixel that gives a comprehensive outlook on a player's profile, reporting name history, game performance across multiple modes, information about the user, and more."
                     yAdj='1' href="https://tiramisu.vip" tags='flask tailwind sass'/>
               <Card i='pas' n='Passiflora' 
                     yAdj='2' href="https://passiflora.literaiiy.me"
                     desc="Passiflora is a customizable and minimalist time organization application used to easily manage schedules and routines for work, school, day-to-day activities, and much more."
-                    tags='nextjs react'
+                    tags='nextjs'
                     beta/>
               <Card n='' yAdj='3' tags=''/>
               <Card n='' yAdj='2' tags=''/>

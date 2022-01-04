@@ -63,8 +63,8 @@ $lessWhite: #fafafa;
 $evenLessWhite: #ccc;
 $toolboxCream: #EEEFA8;
 $toolboxNavy: #162746;
-$dahliaYellow: #FDE256;
-$dahliaOrange: #EB863A;
+$dahliaMagenta: #E59ED9;
+$dahliaPurple: #9682D6;
 $tiramisuLBrown: #CC5100;
 $tiramisuBrown: #7B3100;
 $passifloraMagenta: #db6a8a;
@@ -237,10 +237,10 @@ footer {
         }
     }
     &.dah {
-        background-image: url("/images/dahli.webp");
+        background-image: url("/images/dahli2.webp");
         &:hover {
-            box-shadow: 0.25rem 0.25rem $dahliaOrange;
-            border-color: $dahliaOrange;
+            box-shadow: 0.25rem 0.25rem $dahliaMagenta;
+            border-color: $dahliaPurple;
         }
     }
     &.tir {
