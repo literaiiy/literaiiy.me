@@ -10,7 +10,7 @@ export default class Tagline extends React.Component {
         <span className="tagline1">
           <div class='taglineFlex'>
             <span>
-              <span className="_cursive1"><b>Authentically passionate</b>{" "}</span>
+              <span className="_cursive1">Authentically passionate{" "}</span>
               <span>web development & design.</span>
             </span>
             <svg class="underlineSvg">
