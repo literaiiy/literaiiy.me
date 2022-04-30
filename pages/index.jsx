@@ -39,6 +39,7 @@ export default class Home extends Component {
                     beta/>
               <Card i='cam' n='Campanula'
                     yAdj='3' href="https://campanula.literaiiy.me" 
+                    desc="A completely customizable pomodoro experience."
                     tags='react sass'
                     beta/>
               <Card n='' yAdj='2' tags=''/>
