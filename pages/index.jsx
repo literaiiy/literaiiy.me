@@ -37,7 +37,10 @@ export default class Home extends Component {
                     desc="Passiflora is a customizable and minimalist time organization application used to easily manage schedules and routines for work, school, day-to-day activities, and much more."
                     tags='nextjs'
                     beta/>
-              <Card n='' yAdj='3' tags=''/>
+              <Card i='cam' n='Campanula'
+                    yAdj='3' href="https://campanula.literaiiy.me" 
+                    tags='react sass'
+                    beta/>
               <Card n='' yAdj='2' tags=''/>
               <Card n='' yAdj='3' tags=''/>
             </div>
