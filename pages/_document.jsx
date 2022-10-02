@@ -1,4 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
+import { DeprecationBanner } from '../components/depbanner';
 
 class DOM extends Document {
   render() {
@@ -49,6 +50,7 @@ class DOM extends Document {
         </Head>
         <body>
           <Main />
+          <DeprecationBanner />
           <NextScript />
           {/* Scripts & Libraries */}
             <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
