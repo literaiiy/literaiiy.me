@@ -27,7 +27,7 @@ class DOM extends Document {
           <link rel="canonical" href="https://literaiiy.me" />
           <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css" />
           {/* Meta tags */}
-          <meta name="title" content="Home - literaiiy.me"/>
+          <meta name="title" content="Home - literaiiy.me v3"/>
           <meta name="description" content="Hello! I am literaiiy (styled lowercase), a smartphone, web development & design, computer, and many-other-things enthusiast residing in the Bay Area."/>
           <meta name="keywords" content="literaiiy, toolbox, tiramisu, dah.li/a"/>
           <meta name="robots" content="index, follow"/>
@@ -36,7 +36,7 @@ class DOM extends Document {
           <meta name="author" content="literaiiy"/>
           <meta name="theme-color" media="(prefers-color-scheme: light)" content="white" />
             {/* OpenGraph */}
-            <meta property="og:title" content="Home - literaiiy.me" />
+            <meta property="og:title" content="The Deprecated Home of literaiiy" />
             <meta property="og:site_name" content="literaiiy.me" />
             <meta property="og:url" content="https://literaiiy.me" />
             <meta property="og:description" content="Hello! I am literaiiy (styled lowercase), a smartphone, web development & design, computer, and many-other-things enthusiast residing in the Bay Area." />
